@@ -1,0 +1,52 @@
+<%- include("partials/header.ejs") %>
+    <main>
+        <form action="/submit" method="post" id="pisz">
+            <textarea name="tweet" placeholder="Wpisz tu tweet" id="twetet"></textarea>
+            <div id="buttony">
+                <input type="reset" value="cofnij tweet" class="btn">
+                <input type="submit" value="wyslij tweet" name="send" class="btn">
+            </div>
+        </form>
+
+
+
+        <% if(locals.tweety){ %>
+            <% if(tweety.length>0){ %>
+
+                <% for(let i=tweety.length-1; i>=0; i--){ %>
+                    <% if (locals.editId===i) { %>
+                    <div class="tweet">
+                        <form action="/edit/<%= i %>" method="POST">
+                            <textarea name="tweet"><%= tweety[i] %></textarea>
+                            <input type="submit" value="zapisz" class="btn" id="git">
+                        </form>
+                        </div>
+                        <% } else { %>
+                            <div id="tweet/<% i %>" class="tweet">
+                                <p>
+                                    <%= tweety[i] %>
+                                </p>
+
+                                <div id="haha">
+
+                                    <p>
+                                        <%= czas[i].godzina %>:<%= czas[i].minuta %>
+                                                <%= czas[i].dzien %>/<%= czas[i].miesiac %>/<%= czas[i].rok %>
+                                    </p>
+                                    <div class="wyslij">
+                                        <form action="/delete/<%= i %>" method="post">
+                                            <input type="submit" value="usuń" name="usuń" class="btn">
+                                        </form>
+                                        <form action="/edit-mode/<%= i %>" method="post">
+                                            <input type="submit" value="edit" name="edit" class="btn">
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <% }; }}}%>
+
+    </main>
+    <%- include("partials/footer.ejs") %>

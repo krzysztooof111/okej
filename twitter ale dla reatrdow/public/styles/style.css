@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+}
+main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.wyslij{
+    display: flex;
+    gap: 20px;
+}
+header{
+    
+    padding: 16px;
+    font-size: 1.4rem;
+    color: white;
+}
+footer{
+    padding: 16px;
+}
+
+header, footer{
+    background-color: rgba(49, 186, 236, 0.775);
+    color: white;
+}
+
+.tweet{
+    border: 1.5px solid rgba(62, 62, 62, 0.749);
+    border-radius: 6px;
+    margin: 20px;
+    height: 350px;
+    width: 700px;
+    overflow-y: auto;
+   
+}
+.tweet textarea{
+    height: 500px;
+    width: 100%;
+    font-size: 1.8rem;
+   
+}
+.tweet #git{
+    position: relative;
+    left:560px;
+   
+}
+.tweet p{
+    font-size: 1.8rem;
+    margin: 18px;
+}
+#twetet{
+    height: 250px;
+    width: 700px;
+    font-size: 1.8rem;
+    border: 1.5px solid rgba(62, 62, 62, 0.749);
+    border-radius: 6px;
+    justify-content: space-between;
+}
+#buttony{
+    position: relative;
+    left: 325px;
+}
+.btn {
+    font-size: 1.5rem;
+    padding: 8px;
+    background-color: rgba(49, 186, 236, 0.775);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+.btn:hover{
+    background-color: rgba(29, 147, 190, 0.928);
+}
+#haha{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 60px;
+}
+#haha p{
+    position: relative;
+    bottom: 12px;;
+}
+
+body{
+font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+header, .btn, footer{
+ font-family: "PT Sans Caption", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+textarea{
+    font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  resize: none;
+
+  
+}

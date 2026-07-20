@@ -1,0 +1,135 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+@media (min-width: 1444px){
+.main {
+  flex: 1;
+}
+
+.ele{
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.ele img{
+  height: 250px;
+}
+
+h1 {
+  font-size: 6rem;
+}
+.card{
+  display: flex;
+  gap: 40px
+}
+h2 {
+  font-size: 2rem;
+}
+p{
+  font-size: 1rem;
+}
+}
+@media(max-width: 430px) and (min-width: 359px){
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+h2{
+  margin-top: -1px;
+  font-size: 2rem;
+  text-align: center;
+}
+p{
+  font-size: 1.2rem;
+}
+.ele p{
+  margin-top: -20px;
+  margin-bottom: 35px;
+}
+
+.main{
+  align-items: center;
+  margin: 40px;
+}
+
+.ele img{
+  height: 200px;
+}
+.logo{
+  height: 30px;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+}
+
+@media(max-width: 1024px) and (min-width: 768px){
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+h2{
+  margin-top: px;
+  font-size: 2rem;
+ 
+}
+p{
+  font-size: 1.2rem;
+}
+.ele p{
+  font-size: 1.6rem;
+  margin-top: -20px;
+  margin-bottom: 35px;
+}
+.tile-image{
+  align-items: center;
+  position: relative;
+ 
+}
+.main{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ele img{
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  height: 30px;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+}

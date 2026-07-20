@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            width: 648px;
+            height: 673px;
+            grid-template-columns: 75px 75px 75px 150px 100px 100px 25px;
+            grid-template-rows: 200px 100px 100px 50px 50px 25px 100px;
+            gap: 8px;
+            background-color: black;
+        }
+        #pierwszy{
+            grid-row: 1/ span 1;
+            grid-column: 1/ span 2;
+
+        }
+        #drugi{
+            grid-row: 1/ span 1;
+            grid-column: 3/ span 2;
+
+        }
+        #trzeci{
+            grid-row: 1/ span 1;
+            grid-column: 5/ span 2;
+        }
+         #czwarty{
+            grid-row: 1/ span 1;
+            grid-column: 7/ span 1;
+        }
+        #piaty{
+            grid-column: 1/ span 1;
+             grid-row: 2/ span 2;
+        }
+        #szosty{
+            grid-column: 2/ span 3;
+            grid-row: 2/ span 2;
+        }
+        #siodmy{
+            grid-column:  span 2;
+            grid-row:  span 1;
+        }
+         #osmy{
+            grid-column:  span 1;
+            grid-row:  span 3;
+        }
+        #jedendwa{
+            grid-column:  span 2;
+            grid-row:  span 2;
+        }
+        #jedencztery{
+             grid-column:  span 2;
+            grid-row:  span 3;
+        }
+        #jedenpiec{
+            grid-column: 7 / span 1;
+            grid-row: span 3;
+        }
+        #jedenszes{
+            grid-column: 1 /span 1;
+            grid-row:5/ span 3 ;
+        }
+        #jedensiedem{
+            grid-column: 4/ span 1 ;
+            grid-row: 5 / span 1;
+            
+        }
+        #jedenosiem{
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        #ostatni{
+            grid-column: span 3;
+        }
+        .whity{
+            background-color: rgba(245, 247, 250, 0.96);
+        }
+        .yelly{
+            background-color: rgba(244, 221, 14, 0.881)
+        }
+        .red{
+            background-color: rgba(255, 36, 36, 0.92);
+        }
+        .black{
+            background-color: rgba(13, 13, 20, 0.856);
+        }
+        .blue{
+            background-color: rgba(19, 19, 128, 0.922);
+        }
+        .orangee{
+            background-color: rgb(241, 92, 0);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    <div id="pierwszy" class="whity"></div>
+    <div id="drugi" class="whity"></div>
+    <div id="trzeci" class="yelly"></div>
+    <div id="czwarty" class="whity"></div>
+    <div id="piaty" class="whity"></div>
+    <div id="szosty" class="red"></div>
+     <div id="siodmy" class="yelly"></div>
+    <div id="osmy" class="whity"></div>
+    <div id="dziew" class="whity"></div>
+    <div id="dzies" class="whity"></div>
+
+    <div id="jedenjeden" class="whity"></div>
+    <div id="jedendwa" class="black"></div>
+    <div id="jedentrzy" class="whity"></div>
+    <div id="jedencztery" class="blue"></div>
+     <div id="jedenpiec" class="orangee"></div>
+    <div id="jedenszes" class="yelly"></div>
+    <div id="jedensiedem" class="whity"></div>
+    <div id="jedenosiem" class="whity"></div>
+    <div id="jedendziew" class="black"></div>
+    <div id="ostatni" class="whity"></div>
+
+    </div>
+
+</body>
+</html>

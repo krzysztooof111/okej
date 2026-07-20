@@ -1,0 +1,96 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+header{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(232, 21, 56, 0.919), rgba(200, 17, 0, 0.943), rgba(255, 97, 40, 0.94));
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.87);
+    font-family:"Noto Sans", sans-serif;
+    overflow: hidden;
+    text-shadow: 16px 10px 18px rgba(0, 0, 0, 0.835);
+    
+    
+}
+header h1{
+    font-size: 3rem;
+    position: relative;
+    left: 60px;
+}
+header img{
+  position: relative;
+  left: 180px;
+ 
+}
+main{
+    padding: 20px;
+    background-color: rgba(215, 22, 4, 0.846);
+}
+main .about{
+    height: 300px;
+    width: 650px;
+    display: flex;
+      
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    padding: 18px;
+    border-radius: 16px;
+    background-color: rgba(255, 75, 65, 0.757);
+   margin-left: 30px;
+   
+
+
+}
+main .about h2{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.87);
+    margin-top: -1px;
+}
+main .about p{
+    margin-top: -10px;
+    font-family: "Rosarivo", cursive;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.87);
+    
+}
+
+main .about img{
+    height: 250px;
+    float: left;
+    border-radius: 70%;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    margin-right: 24px;
+   
+}
+main .about .texty{
+    display: flex;
+    flex-direction: column;
+   
+}
+main .nice{
+    display: flex;
+    gap: 160px;
+    padding: 16px;
+    
+}
+main .nice .imeg{
+    height: 300px;
+    display: block;
+    margin-left: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    border-radius: 8px
+
+}
+.nigga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nigga h2{
+     font-family: "Noto Sans", sans-serif;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.87);
+}
