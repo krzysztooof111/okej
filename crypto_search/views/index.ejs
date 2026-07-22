@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="mega now">
+    <form action="/search" method="post">
+        <input type="text" placeholder="Sprawdz pogode w np. Warszawie" name="symbol" class="text">
+        <input type="submit" name="wyslij" value="wyszukaj" class="wyslij">
+    </form>
+        <% if(locals.content) { %>
+            <% const data=JSON.parse(content); %>
+                <% const isNight=data.weather[0].icon.endsWith('n'); %>
+                    <% if(isNight) { %>
+                        <p class="emoji">🌕</p>
+                        <% } else{ %>
+                        <% if(data.weather[0].main==="Clouds" ) { %>
+                            <% if(data.weather[0].description==="few clouds" ||  data.weather[0].description==="scattered clouds" ){ %>
+                                <p class="emoji">🌤️</p>
+                                <% } else if(data.weather[0].description==="overcast clouds" ){ %>
+                                    <p class="emoji">⛅️</p>
+                                    <% } else{%>
+                                        <p class="emoji">☁️</p>
+                                        <% }} else if(data.weather[0].main==="Rain" ) { %>
+                                            <p class="emoji">🌧️</p>
+                                            <% } else if(data.weather[0].main==="Clear" ) { %>
+                                                <p class="emoji">☀️</p>
+                                                <% }else if(data.weather[0].main==="Thunderstorm"){ %>
+                                                     <p class="emoji">🌩️</p>
+                                                     <% }} %>
+                                                <h2><%= name%></h2>
+                                                <% const temp=Math.floor(data.main.temp)%>
+                                                <% const odcz=Math.floor(data.main.feels_like)%>
+                                                <% const wilg=Math.floor(data.main.humidity)%>
+                                                    <p class="stopnie"><%= temp %>°C</p>
+                                                    <p class="nice">Odczuwalna: <%= odcz %>°C</p>
+                                                    <p class="wilg">Wilgotność: <%= wilg %>%</p>
+                                                    <% } else if(locals.kom){ %>
+                                                        <h1><%= kom %></h1>
+                                                                                                                    <table>
+                                                                <tr>
+                                                                    <td>⛅️</td>
+                                                                    <td>🌤️</td>
+                                                                    <td>☀️</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>🌜</td>
+                                                                    <td>🌝</td>
+                                                                    <td>🌛</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>🌧️</td>
+                                                                    <td>⛈️</td>
+                                                                    <td>🌦️</td>
+                                                                </tr>
+                                                            </table>
+                                                        <% } else{%>
+                                                            <h1>Sprawdz pogode gdzie tylkop chcesz</h1>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>⛅️</td>
+                                                                    <td>🌤️</td>
+                                                                    <td>☀️</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>🌜</td>
+                                                                    <td>🌝</td>
+                                                                    <td>🌛</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>🌧️</td>
+                                                                    <td>⛈️</td>
+                                                                    <td>🌦️</td>
+                                                                </tr>
+                                                            </table>
+                                                            <% }%>
+                                            </div>
+
+                                            <script>
+                                                const div=document.querySelector(".mega");
+                                                const emoji=document.querySelector(".emoji").textContent;
+                                                console.log(emoji)
+                                                switch(emoji){
+                                                    case "☀️":
+                                                        div.classList.add("sunny")
+                                                        div.classList.remove("now")
+                                                    break;
+                                                    case "🌕":
+                                                        div.classList.add("moon")
+                                                        div.classList.remove("now")
+                                                    break;
+                                                    case "🌧️":
+                                                        div.classList.add("rain")
+                                                        div.classList.remove("now")
+                                                    break;
+                                                    case "☁️":
+                                                    case "⛅️":
+                                                        div.classList.add("polska_typical");
+                                                        div.classList.remove("now")
+                                                    break;
+                                                    case "🌤️":
+                                                        div.classList.add("sunny_but_clody")
+                                                        div.classList.remove("now")
+                                                    break
+                                                    case "🌩️":
+                                                        div.classList.add("storm");
+                                                        div.classList.remove("now")
+                                                    break;
+                                                }
+                                                
+                                            </script>
+                                                </body>
+
+</html>

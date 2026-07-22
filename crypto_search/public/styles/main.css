@@ -1,0 +1,104 @@
+table td{
+    font-size: 6rem;
+}
+.sunny {
+    background-image: linear-gradient(rgb(131, 228, 255), rgb(0, 200, 255));
+    color: white;
+}
+
+.moon {
+    background-image: linear-gradient(rgb(0, 34, 255), rgb(0, 11, 107));
+    color: white;
+}
+
+.rain {
+    background-image: linear-gradient(rgb(171, 174, 193), rgb(96, 97, 110));
+    color: white;
+
+}
+
+.polska_typical {
+
+    background-image: linear-gradient(rgb(223, 224, 228), rgb(176, 177, 185));
+    color: white;
+
+}
+
+body {
+    display: flex;
+    justify-content: center
+}
+
+.mega form {
+    margin: 20px;
+}
+
+.wyslij {
+    background-color: rgba(0, 208, 0, 0.858);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.8rem;
+}
+
+.wyslij:hover {
+    background-color: rgba(0, 239, 0, 0.69);
+}
+
+.text {
+    width: 300px;
+    font-size: 1.4rem;
+    padding: 8px 16px;
+}
+
+.mega {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    width: 600px;
+    border: 2px solid black;
+    color: white;
+    
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.617);
+
+}
+
+.storm{
+    background-image: linear-gradient(rgb(156, 151, 151),rgba(61, 61, 61, 0.8));
+}
+.sunny_but_clody{
+    background-image: linear-gradient(rgb(187, 229, 253),rgba(64, 197, 249, 0.8));
+}
+.now{
+    background-image: linear-gradient(rgba(59, 0, 71, 0.885),rgba(73, 0, 0, 0.878));
+}
+.mega h1{
+    font-size: 3rem;
+    align-items: center;
+    margin: 20px;
+}
+
+.emoji {
+    font-size: 7rem;
+    margin-bottom: -45px;
+}
+
+.mega p {
+    margin-top: -1px;
+}
+
+.mega h2 {
+    font-size: 3rem;
+    margin-bottom: -1px;
+}
+
+.stopnie {
+    font-size: 5rem;
+    margin-bottom: -1px;
+}
+
+.wilg {
+    font-size: 1.5rem;
+}
